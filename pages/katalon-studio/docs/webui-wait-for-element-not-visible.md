@@ -59,7 +59,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 WebUI.openBrowser(GlobalVariable.G_SiteURL)
 
 'Wait for \'Make Appoint\' button NOT visible in 20 seconds'
-WebUI.waitForElementAttributeValue(findTestObject('Page_CuraHomepage/btn_MakeAppointment'), 'id', 'btnMakeAppointment', 20)
+WebUI.waitForElementNotVisible(findTestObject('Page_CuraHomepage/btn_MakeAppointment'), 'id', 'btnMakeAppointment', 20)
 
 'Close browser'
 WebUI.closeBrowser()
